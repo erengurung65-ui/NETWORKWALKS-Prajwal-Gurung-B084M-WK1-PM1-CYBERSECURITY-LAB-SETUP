@@ -103,6 +103,28 @@ A consistent IP address makes it easier to document the lab and reference the Ka
 
 <img width="955" height="508" alt="Kali Static IP" src="https://github.com/user-attachments/assets/a7ff9ffd-c3ca-4f3f-b20d-38f4528e06f8" />
 
+**Step 6. Terminal IP and Lab Verification
+
+<img width="473" height="355" alt="terminal ip and ping proof" src="https://github.com/user-attachments/assets/0a453418-3d8d-43f3-b1dc-9a3fa549d3e0" />
+
+🔎 Verification
+
+✅ Test	                           🧾 Command	            🎯 Expected Result
+🌐 Check IP address   	              ip a	                    Correct Kali IP displayed
+📡 Test gateway       	              ping 10.0.0.1	            Successful replies
+🌍 Test Internet connectivity        	ping 8.8.8.8	            Successful replies
+🔎 Test DNS resolution              	nslookup networkwalks.com	 Domain resolves
+
+Example Results
+IP Address:
+10.0.0.2/24
+
+Gateway:
+10.0.0.1
+
+DNS:
+8.8.8.8
+
 
 
 
