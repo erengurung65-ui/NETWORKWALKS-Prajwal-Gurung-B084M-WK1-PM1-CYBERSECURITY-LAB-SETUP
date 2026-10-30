@@ -110,10 +110,5 @@ A consistent IP address makes it easier to document the lab and reference the Ka
 
 
 
-DNS:
-8.8.8.8
-
-
-
 
 
