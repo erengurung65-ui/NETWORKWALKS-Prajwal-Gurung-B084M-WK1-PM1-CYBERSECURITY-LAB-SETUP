@@ -1,8 +1,8 @@
-Cybersecurity Lab Environment Setup (Week 1 - PM1)
+#Cybersecurity Lab Environment Setup (Week 1 - PM1)
 
 Building an isolated virtual lab environment for penetration testing and ethical hacking practice.
 
-Project Overview
+#Project Overview
 This project focuses on setting up a virtual cybersecurity and penetration-testing laboratory using VirtualBox and Kali Linux.
 
 The purpose of the lab is to create a controlled environment where cybersecurity tools, network scanning, reconnaissance, vulnerability assessment, and other security-testing activities can be performed safely and repeatedly.
@@ -10,6 +10,7 @@ The purpose of the lab is to create a controlled environment where cybersecurity
 The lab is configured on a private virtual network so that additional machines can be added later and used as targets for authorized security testing.
 
 🎯 Objectives
+
 The main objectives of this project are to:
 
 Install and configure VirtualBox.
@@ -23,6 +24,8 @@ Document the complete setup process.
 Prepare the environment for future cybersecurity projects.
 
 🛡️ Purpose of the Lab
+
+
 The lab provides an isolated and controlled environment for cybersecurity learning and authorized security testing.
 
 It can be used for activities such as:
@@ -35,7 +38,7 @@ Web security testing
 Exploitation practice
 Security-tool experimentation
 
-Lab Architecture & Steps
+##Lab Architecture & Steps##
 
 ⚙️ Lab Configuration
 
@@ -52,15 +55,19 @@ Lab Architecture & Steps
 🔮 Future VM Range	10.0.0.3–10.0.0.99
 
 🪜 Lab Setup Procedure
-Step 1. Install 7-Zip
+
+**Step 1. Install 7-Zip
+
+
 7-Zip was installed to extract the Kali Linux virtual-machine package, which may be distributed as a .7z archive.
 
 Tool: 7-Zip
 
-Step 2. Install VirtualBox
+**Step 2. Install VirtualBox
+
 VirtualBox was installed as the hypervisor.
 
-Step 3. Create the NAT Network
+**Step 3. Create the NAT Network
 A dedicated NAT Network was created in VirtualBox.
 
 Configuration: Network Name: NatNetwork IPv4 Prefix: 10.0.0.0/24 DHCP: Enabled
@@ -72,17 +79,18 @@ A NAT Network was selected because multiple virtual machines connected to the sa
 
 This will allow future attacker and target VMs to communicate within the lab.
 
-Step 4. Import Kali Linux
+**Step 4. Import Kali Linux
 The Kali Linux virtual machine was downloaded from the official Kali Linux website and imported into VirtualBox.
 
 The VM network adapter was configured as follows:
 
 Adapter 1
+
 Attached to: NAT Network
-Network:     NatNetwork
+Network:  NatNetwork
 Adapter Type: Intel PRO/1000 MT Desktop
 
-Step 5. Configure the Kali Linux Network
+**Step 5. Configure the Kali Linux Network
 The Kali Linux network configuration was checked and configured with a consistent IPv4 address.
 
 Example configuration:
